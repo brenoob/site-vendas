@@ -79,12 +79,13 @@ p {
   margin-left: 10px;
   margin-right: 10px;
 }
-#footer{
-  background-color: #1e9de4;
+.footer{
+  background-color: #23253d;
   opacity: 1;
   
 }
 footer{
+  
   opacity: 0.9;
   color: rgb(196, 196, 196);
 }
