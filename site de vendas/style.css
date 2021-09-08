@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -79,6 +80,7 @@ p {
   margin-left: 10px;
   margin-right: 10px;
 }
+/* start footer */
 .footer{
   background-color: #23253d;
   opacity: 1;
@@ -90,13 +92,20 @@ footer{
   color: rgb(196, 196, 196);
 }
 #linkedin{
-  width: 30px;
-  height: 20px;
+  width: 40px;
+  height: 30px;
 }
+.name{
+  font-size: 20pt;
+  font-family: Lobster;
+  font-style: oblique;
+  color: #1e9de4;
+}
+/* stop footer */
+
+/* start medias */
 @media (max-width:425px){
-  *{
-    
-  }
+  
   html{
     
     display: flex;
