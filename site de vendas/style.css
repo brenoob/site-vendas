@@ -6,11 +6,12 @@
 }
 html {
   background-color: #1d1f33;
-  margin-left: 20vw;
+  display: flex;
+  justify-content: center;
 }
 body{
-  width: 80%;
-  text-align: center;
+  width: 100%;
+  text-align: center;  
 }
 .title {
   text-align: center;
@@ -21,9 +22,10 @@ body{
   color: #1e9de4;
 }
 #iframe{
+  display: flex;
+  justify-content: center;
   width:660px; 
   height:415px;
-
 }
 .video {  
   margin-top: 3vh;
@@ -33,7 +35,6 @@ body{
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
-
 button {
   font-size: 24pt;
   background-color: #1e9de4;
@@ -52,44 +53,50 @@ a {
   text-decoration: none;
   color: #ebe5e5;
 }
-p {
-  text-align: center;  
+p {  
+  font-size: 20pt;  
   margin-top: 3vh;
-  
+  color: #ebe5e5;  
+}
+/*start img*/
+#img{  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 #img1 {
-  background-position: left;
+  
   height: 220px;
-  width: 300px;
+  width: 350px;
   margin-top: 3vh;
   margin-left: 10px;
   margin-right: 10px;
 }
 #img2 {
-  background-position: right;
+  
   height: 220px;
-  width: 300px;
+  width: 350px;
   margin-top: 3vh;
   margin-left: 10px;
   margin-right: 10px;
 }
 #img3 {
+  
   height: 220px;
-  width: 300px;
+  width: 350px;
   margin-top: 3vh;
   margin-left: 10px;
   margin-right: 10px;
 }
 /* start footer */
-.footer{
-  background-color: #23253d;
-  opacity: 1;
-  
-}
-footer{
-  
-  opacity: 0.9;
-  color: rgb(196, 196, 196);
+.footer2{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  margin-top: 15vh;
+  margin-bottom: 0;
 }
 #linkedin{
   width: 40px;
@@ -101,27 +108,21 @@ footer{
   font-style: oblique;
   color: #1e9de4;
 }
-/* stop footer */
-
 /* start medias */
-@media (max-width:425px){
-  
-  html{
-    
+@media (min-width:280px){  
+  html{    
     display: flex;
     margin-left: 0;
   }
-  body{
-    
-    
+  body{    
     margin-left: 44vw;
     width: 425px;
     margin: 0;
     padding: 0;
     border: 0;
   }
-  #iframe{
-    position: relative;
+  #iframe,.img{
+    display: inline-block;
     width: 300px;
     height: 200px;
   }
@@ -130,14 +131,27 @@ footer{
     justify-content: center;
     color: #ebe5e5;
   }
-  .img3{
-    height: 220px;
-    width: 300px;
-  }
+  
 }
-@media (max-width: 860px) {
-  #iframe{
-    width: 300px;
-    height: 250px;
+@media (min-width: 539px) and (max-width: 1024px) {
+  #iframe,#img{
+    display: inline-block;   
+    width: 500px;
+    height: 380px;
+  }
+  body{
+    width: 80%;
+  }
+  
+   
+}
+@media (min-width: 1025px) and (max-width: 2560px) {
+  #iframe,#img{
+    display: inline-block;   
+    width: 780px;
+    height: 415px;
+  } 
+  body{
+    width: 80%;
   }
 }
